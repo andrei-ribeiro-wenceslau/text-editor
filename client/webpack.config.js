@@ -32,7 +32,7 @@ module.exports = () => {
         theme_color: "#000000",
         icons: [
           {
-            src: path.resolve("./src/images/logo.png"), // Replace with your icon path
+            src: path.resolve("src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512],
           },
         ],
