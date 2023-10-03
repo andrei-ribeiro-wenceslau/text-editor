@@ -19,7 +19,7 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: "./src/index.html",
+        template: "./index.html",
         filename: "index.html",
       }),
 
@@ -46,7 +46,24 @@ module.exports = () => {
     ],
 
     module: {
-      rules: [],
+      rules: [
+        // Add CSS loader rule
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+        // Add Babel loader rule
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+            },
+          },
+        },
+      ],
     },
   };
 };
