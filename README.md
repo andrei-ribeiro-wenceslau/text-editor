@@ -42,7 +42,7 @@ https://text-editor-app-andrei-87e2b2300252.herokuapp.com/
 Contributions are welcome! If you find any issues or have enhancements in mind, feel free to submit pull requests or open issues.
 
 ## License
-This project is licensed under the GPL-3.0 license.
+This project is licensed under the Apache-2.0 license.
 
 ## Contact
 For any questions or inquiries, please feel free to contact:
