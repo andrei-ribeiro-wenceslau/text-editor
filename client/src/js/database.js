@@ -11,7 +11,7 @@ const initdb = async () =>
       console.log('jate database created');
     },
   });
-
+// Comment
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
   console.log('Post To The Database...');
